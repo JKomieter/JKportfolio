@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Typed from "react-typed";
 import { Rubik } from "next/font/google";
 import ReactTyped from "react-typed";
 
-const rubik = Rubik({ subsets: ["latin"], weights: ["400", "500", "600", "700"] });
+const rubik = Rubik({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 const LeftHero = () => {
     return (
