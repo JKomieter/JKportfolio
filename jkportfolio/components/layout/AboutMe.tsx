@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import { Rubik } from "next/font/google";
 import { useInView } from "react-intersection-observer";
+import { Bebas_Neue } from "next/font/google";
 
-const rubik = Rubik({
+const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "400",
 });
 
 const AboutMe = () => {
@@ -13,9 +13,13 @@ const AboutMe = () => {
 
   return (
     <div
-      className={` flex items-center justify-center 
-       h-[50vh] bg-orange-700 text-neutral-100 lg:px-32 md:px-16 sm:px-8 px-4
+      className={` flex items-center justify-center bg-cover bg-center bg-no-repeat bg-fixed
+       h-[50vh] text-white lg:px-32 md:px-16 sm:px-8 px-4 shadow-2xl
        }`}
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/images/greengrass.jpg",
+      }}
     >
       <div
         ref={divRef}
@@ -24,7 +28,7 @@ const AboutMe = () => {
         } transition-all duration-1000`}
       >
         <span
-          className={`font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-xl ${rubik.className}`}
+          className={`font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-xl ${bebasNeue.className}`}
         >
           Hi, I'm Joel. Nice to meet you!
         </span>
