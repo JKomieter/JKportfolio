@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { Bebas_Neue } from "next/font/google";
 import { useInView } from "react-intersection-observer";
