@@ -12,7 +12,7 @@ const SkillItem = ({ name, Icon }: {
  }) => {
 
     return (
-        <div className="rounded-sm p-3 flex flex-col gap-2 items-center cursor-pointer
+        <div className="rounded-sm p-3 flex flex-col gap-2 items-center cursor-pointer hover:shadow-green-700 
         justify-center bg-neutral-500 w-full shadow-inner hover:translate-y-0.5 transition-all duration-300">
           <Icon className="text-4xl" />
           <p

@@ -1,6 +1,8 @@
+"use client";
 import { skills } from "./SkillList";
 import SkillItem from "./SkillItem";
 import { Bebas_Neue } from "next/font/google";
+import { useInView } from "react-intersection-observer";
 
 
 const bebasNeue = Bebas_Neue({
@@ -9,8 +11,15 @@ const bebasNeue = Bebas_Neue({
 });
 
 const SkillsInfo = () => {
+
+    const { ref: divRef, inView: divIsVisible } = useInView();
+
     return (
-      <div className="w-full h-full flex flex-col gap-4 items-start">
+      <div 
+        ref={divRef}
+      className={`w-full h-full flex flex-col gap-4 items-start
+        transition-all duration-1000 ${divIsVisible ? "opacity-1" : "opacity-0 translate-x-48"}
+      `}>
         <h3
           className={`uppercase text-orange-700 lg:text-4xl md:text-3xl 
           sm:text-2xl text-xl text-left font-semibold w-full ${bebasNeue.className}`}

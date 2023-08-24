@@ -9,7 +9,7 @@ const bebasNeue = Bebas_Neue({
 
 const Header = () => {
     return (
-      <div className="w-full py-7 lg:px-32 md:px-16 sm:px-8 px-4 shadow-2xl flex flex-row items-center justify-between bg-neutral-600 fixed">
+      <div className="w-full py-7 z-50 lg:px-32 md:px-16 sm:px-8 px-4 shadow-2xl flex flex-row items-center justify-between bg-neutral-600 fixed">
         <div
           className={`lg:text-3xl md:text-2xl sm:text-xl font-semibold text-orange-700 uppercase ${bebasNeue.className}`}
         >

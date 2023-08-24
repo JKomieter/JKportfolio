@@ -59,7 +59,7 @@ const GetToKnowMe = () => {
             className={`px-4 py-3 rounded-md text-lg cursor-pointer bg-orange-700 text-neutral-100 ${bebasNeue.className}
             hover:bg-orange-900 transition-all duration-500 ease-in-out shadow-2xl`}
           >
-            Download my resume
+            Contact me
           </span>
         </div>
       </div>
