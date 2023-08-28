@@ -14,12 +14,12 @@ const AboutMe = () => {
   return (
     <div
       className={` flex items-center justify-center bg-cover bg-center bg-no-repeat bg-fixed
-       h-[50vh] text-white lg:px-32 md:px-16 sm:px-8 px-4 shadow-2xl
+       h-[50vh] text-white lg:px-32 md:px-16 sm:px-8 px-4 shadow-2xl bg-[#333]
        }`}
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/images/greengrass.jpg",
-      }}
+      // style={{
+      //   backgroundImage:
+      //     "linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/images/greengrass.jpg",
+      // }}
     >
       <div
         ref={divRef}
