@@ -46,7 +46,9 @@ const ProjectList = () => {
     <div className='w-full h-full flex flex-col gap-14 items-center'>
       {
         projects.map((project) => (
-          <div className="w-full flex md:flex-row flex-col gap-8 items-center justify-between">
+          <div 
+          key={project.name}
+          className="w-full flex md:flex-row flex-col gap-8 items-center justify-between">
             <div className="w-full h-full rounded-md overflow-hidden">
               <Image src={project.image} alt={project.name} width={500} height={400} className='w-full' />
             </div>
