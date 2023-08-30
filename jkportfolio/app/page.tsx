@@ -6,7 +6,7 @@ import Projects from '@/components/layout/Projects/Projects';
 
 export default function Home() {
   return (
-    <div style={{scrollBehavior: "smooth"}}>
+    <div style={{scrollBehavior: "smooth"}} className='overflow-x-hidden'>
       <Hero />
       <AboutMe />
       <Skills />

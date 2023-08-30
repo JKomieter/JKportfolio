@@ -2,6 +2,7 @@
 "use client";
 import { Bebas_Neue } from "next/font/google";
 import { useInView } from "react-intersection-observer";
+import ParticlesBg from "../layout/Projects/Particles";
 
 const bebasNeue = Bebas_Neue({
     subsets: ["latin"],
@@ -15,6 +16,7 @@ const GetToKnowMe = () => {
     const { ref: divRef, inView: divIsVisible } = useInView();
 
     return (
+      <>
       <div
         className={`w-full h-full flex flex-col gap-10 transition-all duration-1000
         ${divIsVisible ? "opacity-1" : "opacity-0 -translate-x-48"}
@@ -63,6 +65,7 @@ const GetToKnowMe = () => {
           </span>
         </div>
       </div>
+      </>
     );
 }
 

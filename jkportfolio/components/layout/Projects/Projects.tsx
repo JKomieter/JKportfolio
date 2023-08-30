@@ -12,7 +12,6 @@ const Projects = () => {
 
   return (
     <>
-      {/* <ParticlesBg /> */}
       <div className="w-full h-full lg:px-32 md:px-16 sm:px-8 px-4 flex flex-col gap-10 items-center bg-[#333333]">
         <div className="w-full flex flex-col gap-4 items-center justify-center py-10">
           <h2

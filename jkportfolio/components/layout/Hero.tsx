@@ -1,13 +1,15 @@
+"use client";
 import LeftHero from "./Heros/LeftHero"
 import RightHero from "./Heros/RightHero";
 import ParticlesBg from "./Projects/Particles";
+import Particles2 from "./Projects/Particles2";
 
 
 
 const Hero = () => {
     return (
       <>
-        <ParticlesBg />
+      <Particles2 />
       <div
         className="w-full lg:px-32 md:px-16 sm:px-8 px-4 flex md:flex-row flex-col py-32 
         items-center justify-between sm:py-10 bg-center bg-fixed bg-no-repeat bg-cover h-screen"
