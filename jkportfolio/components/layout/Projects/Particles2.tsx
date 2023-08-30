@@ -33,7 +33,7 @@ const Particles2 = () => {
                     "shape": {
                         "type": "star",
                         "options": {
-                            "sides": 5
+                            "sides": 5 as any,
                         }
                     }, "opacity": {
                         "value": 0.8,
