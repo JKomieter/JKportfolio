@@ -17,7 +17,7 @@ const bebasNeue = Bebas_Neue({
 interface ProjectListItemProps {
     name: string;
     description: string;
-    image: string;
+    image: any;
     link: string;
 }
 
@@ -32,7 +32,7 @@ const ProjectListItem: FC<ProjectListItemProps> = ({
         <div
             className="w-full flex md:flex-row flex-col gap-8 items-center justify-between">
             <div className="w-full h-full rounded-md overflow-hidden">
-                <Image src={image} alt={name} width={500} height={400} className='w-full' />
+                <Image src={image as string} alt={name} width={500} height={400} className='w-full' />
             </div>
             <div className="flex flex-col w-full item-start gap-8">
                 <h1 className={`md:text-3xl sm:text-2xl text-xl font-bold text-neutral-200 ${bebasNeue.className}`}>{name}</h1>
