@@ -1,7 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
 import { Bebas_Neue } from 'next/font/google'
 import { Montserrat } from 'next/font/google';
+import ProjectListItem from './ProjectListItem';
+import Emoticare from '../../../public/images/Emoticare.png';
 
 const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
@@ -46,35 +47,13 @@ const ProjectList = () => {
     <div className='w-full h-full flex flex-col gap-14 items-center'>
       {
         projects.map((project) => (
-          <div 
-          key={project.name}
-          className="w-full flex md:flex-row flex-col gap-8 items-center justify-between">
-            <div className="w-full h-full rounded-md overflow-hidden">
-              <Image src={project.image} alt={project.name} width={500} height={400} className='w-full' />
-            </div>
-            <div className="flex flex-col w-full item-start gap-8">
-              <h1 className={`md:text-3xl sm:text-2xl text-xl font-bold text-neutral-200 ${bebasNeue.className}`}>{project.name}</h1>
-              <p
-                className={`${montserrat.className} text-neutral-200 font-semibold md:text-base sm:text-sm text-xs }`}
-              >
-                {project.description}
-              </p>
-              <div className="flex flex-row items-center gap-5">
-                <span
-                  className={`px-4 py-3 rounded-md text-lg cursor-pointer bg-orange-700 text-neutral-100 ${bebasNeue.className}
-            hover:bg-orange-900 transition-all duration-500 ease-in-out shadow-2xl`}
-                >
-                  View Project
-                </span>
-                <span
-                  className={`px-4 py-2 rounded-md text-lg cursor-pointer border-4 border-neutral-orange-700 text-neutral-100 ${bebasNeue.className}
-             transition-all duration-500 ease-in-out shadow-2xl hover:border-orange-700`} 
-                >
-                  Live Demo
-                </span>
-              </div>
-            </div>
-          </div>
+          <ProjectListItem
+            key={project.name}
+            name={project.name}
+            description={project.description}
+            image={project.image}
+            link={project.link}
+          />
         ))
       }
     </div>
