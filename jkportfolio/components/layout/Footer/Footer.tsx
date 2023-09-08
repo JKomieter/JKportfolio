@@ -29,8 +29,7 @@ const Footer = () => {
                         Joel Adjetey Komieter
                     </h4>
                     <p className={`md:text-sm text-xs text-neutral-200 ${montserrat.className} md:w-[70%] w-full`}>
-                        Thank you for visiting my portfolio! I'm truly enthusiastic about coding and web development,
-                        and I'm always eager to take on new challenges. Let's collaborate on exciting projects and make the digital world even more innovative and user-friendly.
+                        {"Thank you for visiting my portfolio! I'm truly enthusiastic about coding and web development, and I'm always eager to take on new challenges. Let's collaborate on exciting projects and make the digital world even more innovative and user-friendly."}
                     </p>
                 </div>
                 <div className="flex flex-col gap-4 w-full">
@@ -62,6 +61,7 @@ const Footer = () => {
             <hr className="text-neutral-200 w-full my-7" />
             <span className="text-neutral-200 md:text-xs text-[9px] w-full flex flex-row items-center">
                 <PiCopyrightFill size={12} color="white" />2023 
+                <PiCopyrightFill size={12} color="white" /> 2023 
                 <span onClick={() => router.push("https://j-kportfolio-rho3.vercel.app/")} className="underline cursor-pointer ">  Joel Adjetey Komieter</span>. All Rights Reserved.</span>
         </div>
     )
