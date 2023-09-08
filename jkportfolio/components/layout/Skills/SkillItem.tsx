@@ -12,8 +12,8 @@ const SkillItem = ({ name, Icon }: {
  }) => {
 
     return (
-        <div className="rounded-md p-3 flex flex-col gap-2 items-center cursor-pointer hover:border-[#FFA500]
-        justify-center bg-neutral-500 w-full shadow-inner hover:-translate-y-0.5 transition-all duration-300">
+        <div className="rounded-md p-3 flex flex-col gap-2 items-center cursor-pointer shadow-md
+        justify-center bg-neutral-500 w-full hover:-translate-y-0.5 transition-all duration-300">
           <Icon className="text-4xl" />
           <p
             className={`text-neutral-200 font-semibold ${bebasNeue.className} `}

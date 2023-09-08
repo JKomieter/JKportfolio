@@ -1,8 +1,9 @@
+"use client";
 import { FC } from "react";
 import Image from "next/image";
 import { Montserrat } from 'next/font/google';
 import { Bebas_Neue } from "next/font/google";
-
+import { useInView } from "react-intersection-observer";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -17,7 +18,7 @@ const bebasNeue = Bebas_Neue({
 interface ProjectListItemProps {
     name: string;
     description: string;
-    image: any;
+    image: string;
     link: string;
 }
 
@@ -28,14 +29,24 @@ const ProjectListItem: FC<ProjectListItemProps> = ({
     image,
     link,
 }) => {
+
+    const { ref: imageRef, inView: imageRefIsVisible } = useInView()
+    const { ref: textRef, inView: textRefIsVisible } = useInView()
+
     return (
         <div
             className="w-full flex md:flex-row flex-col gap-8 items-center justify-between">
-            <div className="w-full h-full rounded-md overflow-hidden">
-                <Image src={image as string} alt={name} width={500} height={400} className='w-full' />
+            <div 
+            ref={imageRef}
+            className={`w-full h-full rounded-md overflow-hidden transition-all duration-1000 ease-in-out transform
+            ${imageRefIsVisible ? "opacity-100" : "-translate-x-48 opacity-0"} shadow-md`}>
+                <Image src={image} alt={name} width={500} height={400} className='w-full' />
             </div>
-            <div className="flex flex-col w-full item-start gap-8">
-                <h1 className={`md:text-3xl sm:text-2xl text-xl font-bold text-neutral-200 ${bebasNeue.className}`}>{name}</h1>
+            <div 
+            ref={textRef}
+                className={`flex flex-col w-full item-start gap-8 transition-all duration-1000 ease-in-out transform
+            ${textRefIsVisible ? "opacity-100" : "translate-x-48 opacity-0"}}`}>
+                <h1 className={`md:text-3xl sm:text-2xl text-xl font-bold text-gray-300 ${bebasNeue.className}`}>{name}</h1>
                 <p
                     className={`${montserrat.className} text-neutral-200 font-semibold md:text-base sm:text-sm text-xs }`}
                 >

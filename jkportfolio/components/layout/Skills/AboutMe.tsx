@@ -16,19 +16,18 @@ const AboutMe = () => {
       className={` flex items-center justify-center bg-cover bg-center bg-no-repeat bg-fixed
        h-[50vh] text-white lg:px-32 md:px-16 sm:px-8 px-4 shadow-2xl bg-[#333]
        }`}
-      // style={{
-      //   backgroundImage:
-      //     "linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/images/greengrass.jpg",
-      // }}
+    // style={{
+    //   backgroundImage:
+    //     "linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/images/greengrass.jpg",
+    // }}
     >
       <div
         ref={divRef}
-        className={`flex flex-col gap-4 items-center justify-center py-10 ${
-          inView ? "opacity-1" : "opacity-0 translate-y-14"
-        } transition-all duration-1000`}
+        className={`flex flex-col gap-4 items-center justify-center py-10 ${inView ? "opacity-1" : "opacity-0 translate-y-14"
+          } transition-all duration-1000`}
       >
         <span
-          className={`font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-xl ${bebasNeue.className}`}
+          className={`font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-green-200 text-xl ${bebasNeue.className}`}
         >
           Hi, I'm Joel. Nice to meet you!
         </span>

@@ -17,27 +17,27 @@ const ParticlesBg = () => {
 
     return (
         <Particles
-            className="w-full absolute -z-30 h-full object-fill"
+            className="w-full  -z-30 h-full object-fill fixed"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
                 fullScreen: false,
                 background: {
-                    image: "linear-gradient(19deg, #222222 0%, #333333 100%)",
+                    image: "linear-gradient(19deg, #222222 0%, #C2410C 100%)",
                 },
                 particles: {
-                    number: { value: 10, density: { enable: true, value_area: 600 } },
+                    number: { value: 30, density: { enable: true, value_area: 600 } },
                     color: { value: "#ffffff" },
                     shape: {
                         type: "square",
                         stroke: { width: 0, color: "#000000" },
-                        polygon: { nb_sides: 5 },
+                        polygon: { nb_sides: 150 },
                     },
                     opacity: {
                         value: 0.25,
                         random: true,
-                        anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+                        anim: { enable: false, speed: 3, opacity_min: 0.1, sync: false },
                     },
                     size: {
                         value: 29,

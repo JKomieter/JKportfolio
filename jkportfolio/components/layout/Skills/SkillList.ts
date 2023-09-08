@@ -1,4 +1,4 @@
-import { Firebase, GitHub, HTML, JavaScript, MongoDB, NodeJs, ReactJs, CSS } from "../svg";
+import { Firebase, GitHub, HTML, JavaScript, MongoDB, NodeJs, ReactJs, CSS, Rust, Docker, Python } from "../../svg";
 
 export type Skill = {
     name: string;
@@ -37,5 +37,17 @@ export const skills: Skill[] = [
     {
         name: "Firebase",
         icon: Firebase
+    },
+    {
+        name: "Rust",
+        icon: Rust
+    }, 
+    {
+        name: "Docker",
+        icon: Docker
+    },
+    {
+        name: "Python",
+        icon: Python
     }
 ]

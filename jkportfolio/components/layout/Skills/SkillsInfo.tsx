@@ -33,7 +33,12 @@ const SkillsInfo = () => {
             ))}
           </div>
           <div className="rounded-sm p-3 flex flex-col items-start gap-3 h-full basis-1/2 w-full">
-            {skills.slice(5).map((skill) => (
+            {skills.slice(5, 8).map((skill) => (
+              <SkillItem key={skill.name} name={skill.name} Icon={skill.icon} />
+            ))}
+          </div>
+          <div className="rounded-sm p-3 flex flex-col items-start gap-3 h-full basis-1/2 w-full">
+            {skills.slice(8).map((skill) => (
               <SkillItem key={skill.name} name={skill.name} Icon={skill.icon} />
             ))}
           </div>
