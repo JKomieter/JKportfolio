@@ -1,5 +1,6 @@
 "use client";
 import { Raleway } from "next/font/google";
+import { PiCopyrightFill } from "react-icons/pi";
 import { Montserrat } from "next/font/google";
 import { TfiLinkedin } from "react-icons/tfi";
 import { RiInstagramFill } from "react-icons/ri";
@@ -59,8 +60,9 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="text-neutral-200 w-full my-7" />
-            <span className="text-neutral-200 md:text-xs text-[9px] w-full">&copy; 2023 
-                <span onClick={() => router.push("https://j-kportfolio-rho3.vercel.app/")} className="underline cursor-pointer "> Joel Adjetey Komieter</span>. All Rights Reserved.</span>
+            <span className="text-neutral-200 md:text-xs text-[9px] w-full flex flex-row items-center">
+                <PiCopyrightFill size={12} color="white" />2023 
+                <span onClick={() => router.push("https://j-kportfolio-rho3.vercel.app/")} className="underline cursor-pointer ">  Joel Adjetey Komieter</span>. All Rights Reserved.</span>
         </div>
     )
 }
