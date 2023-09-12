@@ -1,7 +1,5 @@
 import { Bebas_Neue } from "next/font/google";
-import { useCallback } from "react";
 import ProjectList from "./ProjectList";
-import ParticlesBg from "./Particles";
 
 const bebasNeue = Bebas_Neue({
   subsets: ["latin"],

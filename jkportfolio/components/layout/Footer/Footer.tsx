@@ -60,7 +60,6 @@ const Footer = () => {
             </div>
             <hr className="text-neutral-200 w-full my-7" />
             <span className="text-neutral-200 md:text-xs text-[9px] w-full flex flex-row items-center">
-                <PiCopyrightFill size={12} color="white" />2023 
                 <PiCopyrightFill size={12} color="white" /> 2023 
                 <span onClick={() => router.push("https://j-kportfolio-rho3.vercel.app/")} className="underline cursor-pointer ">  Joel Adjetey Komieter</span>. All Rights Reserved.</span>
         </div>

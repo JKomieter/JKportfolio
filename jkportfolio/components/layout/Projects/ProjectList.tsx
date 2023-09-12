@@ -18,7 +18,7 @@ const projects = [
   {
     name: "Emoticare AI",
     description: "Experience the future of emotional well-being with the Emoticare AI app. Harnessing the power of artificial intelligence and empathetic design, this innovative chatbot is your personalized companion for navigating life's ups and downs. Whether you're seeking a listening ear, advice, or simply a smile, Emoticare AI responds with understanding and care. Explore an interactive journey of emotional support and growth, one conversation at a time.",
-    image: "/assets/images/Emoticare.png",
+    image: "/images/Emoticare.png",
     link: "",
   },
   {
