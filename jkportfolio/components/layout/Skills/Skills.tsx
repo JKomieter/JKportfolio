@@ -1,7 +1,7 @@
 "use client";
 import SkillsInfo from "./SkillsInfo";
 import GetToKnowMe from './GetToKnowMe';
-import ParticlesBg from "../Projects/Particles";
+import ParticlesBg from "../../../particles/ParticlesBg";
 
 
 

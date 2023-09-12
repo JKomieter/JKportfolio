@@ -5,12 +5,12 @@ import Skills from '@/components/layout/Skills/Skills';
 import Projects from '@/components/layout/Projects/Projects';
 import Contact from '@/components/layout/Contact/Contact';
 import Footer from '@/components/layout/Footer/Footer';
-import ParticlesBg from '@/components/layout/Projects/Particles';
+import ParticlesBg from '@/particles/ParticlesBg';
 
 export default function Home() {
   return (
     <div style={{scrollBehavior: "smooth"}} className='overflow-x-hidden'>
-      <ParticlesBg />
+      <ParticlesBg gradient='"linear-gradient(19deg, #222222 0%, #C2410C 100%)"' />
       <Hero />
       <AboutMe />
       <Skills />

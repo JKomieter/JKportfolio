@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 import { Container, Engine } from "tsparticles-engine";
 
 
-const ParticlesBg = () => {
+const ParticlesBg = ({gradient}: {gradient: string}) => {
 
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine);
@@ -17,14 +17,14 @@ const ParticlesBg = () => {
 
     return (
         <Particles
-            className="w-full  -z-30 h-full object-fill fixed"
+            className="w-full -z-50 h-full object-fill fixed"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
                 fullScreen: false,
                 background: {
-                    image: "linear-gradient(19deg, #222222 0%, #C2410C 100%)",
+                    image: gradient,
                 },
                 particles: {
                     number: { value: 30, density: { enable: true, value_area: 600 } },

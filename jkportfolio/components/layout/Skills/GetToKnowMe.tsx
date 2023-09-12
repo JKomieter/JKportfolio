@@ -2,7 +2,7 @@
 "use client";
 import { Bebas_Neue } from "next/font/google";
 import { useInView } from "react-intersection-observer";
-import ParticlesBg from "../Projects/Particles";
+import ParticlesBg from "../../../particles/ParticlesBg";
 
 const bebasNeue = Bebas_Neue({
     subsets: ["latin"],

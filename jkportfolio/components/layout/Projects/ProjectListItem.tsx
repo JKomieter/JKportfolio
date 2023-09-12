@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Montserrat } from 'next/font/google';
 import { Bebas_Neue } from "next/font/google";
 import { useInView } from "react-intersection-observer";
+import { useRouter } from "next/navigation";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -32,7 +33,8 @@ const ProjectListItem: FC<ProjectListItemProps> = ({
 
     const { ref: imageRef, inView: imageRefIsVisible } = useInView()
     const { ref: textRef, inView: textRefIsVisible } = useInView()
-
+    const router = useRouter();
+    
     return (
         <div
             className="w-full flex md:flex-row flex-col gap-8 items-center justify-between">
@@ -54,16 +56,11 @@ const ProjectListItem: FC<ProjectListItemProps> = ({
                 </p>
                 <div className="flex flex-row items-center gap-5">
                     <span
+                    onClick={() => router.push(link)}
                         className={`px-4 py-3 rounded-md text-lg cursor-pointer bg-orange-700 text-neutral-100 ${bebasNeue.className}
             hover:bg-orange-900 transition-all duration-500 ease-in-out shadow-2xl`}
                     >
                         View Project
-                    </span>
-                    <span
-                        className={`px-4 py-2 rounded-md text-lg cursor-pointer border-4 border-neutral-orange-700 text-neutral-100 ${bebasNeue.className}
-             transition-all duration-500 ease-in-out shadow-2xl hover:border-orange-700`}
-                    >
-                        Live Demo
                     </span>
                 </div>
             </div>

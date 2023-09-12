@@ -1,7 +1,7 @@
 "use client";
 import LeftHero from "./LeftHero"
 import RightHero from "./RightHero";
-import ParticlesBg from "../Projects/Particles";
+import ParticlesBg from "../../../particles/ParticlesBg";
 
 
 
