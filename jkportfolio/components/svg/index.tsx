@@ -13,3 +13,4 @@ export { default as Firebase } from "./Firebase.svg";
 export { default as Rust } from "./Rust.svg";
 export { default as Docker } from "./Docker.svg";
 export { default as Hero2 } from "./Hero2.svg";
+export { default as CampusCommune } from "./CampusCommune.svg";
