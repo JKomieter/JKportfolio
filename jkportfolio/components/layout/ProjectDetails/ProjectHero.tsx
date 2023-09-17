@@ -14,9 +14,9 @@ const montserrat = Montserrat({
     weight: "400",
 });
 
-const ProjectHero = ({project}: {project: Record<string, string>}) => {
+const ProjectHero = ({project}: {project: Record<string, any>}) => {
     return (
-        <div className="w-full lg:px-32 md:px-16 sm:px-8 px-4 flex flex-col py-32 z-[999] bg-neutral-500
+        <div className="w-full lg:px-32 md:px-16 sm:px-8 px-4 flex flex-col py-32 z-[999] bg-gray-700
         items-center justify-center gap-6 sm:py-10 bg-center bg-fixed bg-no-repeat bg-cover h-[90vh]">
             <h1 className={`lg:text-5xl md:text-4xl text-3xl uppercase font-bold
              text-neutral-100 text-center ${raleway.className}`}>

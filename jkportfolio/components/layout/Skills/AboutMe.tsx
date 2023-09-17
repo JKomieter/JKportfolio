@@ -27,7 +27,7 @@ const AboutMe = () => {
           } transition-all duration-1000`}
       >
         <span
-          className={`font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-green-200 text-xl ${bebasNeue.className}`}
+          className={`font-semibold lg:text-4xl md:text-3xl sm:text-2xl text-orange-200 text-xl ${bebasNeue.className}`}
         >
           Hi, I'm Joel. Nice to meet you!
         </span>

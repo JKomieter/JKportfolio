@@ -10,7 +10,8 @@ const Hero = () => {
       <>
       
       <div
-        className="w-full lg:px-32 md:px-16 sm:px-8 px-4 flex md:flex-row flex-col py-32 bg-neutral-500
+        // style={{backgroundImage: "url(/images/matrix.jpg)"}}
+        className="w-full lg:px-32 md:px-16 sm:px-8 px-4 flex md:flex-row flex-col py-32 bg-gray-700
         items-center justify-between gap-6 sm:py-10 bg-center bg-fixed bg-no-repeat bg-cover h-screen"
       >
         <LeftHero />

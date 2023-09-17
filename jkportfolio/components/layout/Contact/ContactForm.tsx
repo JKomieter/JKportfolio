@@ -26,7 +26,7 @@ const ContactForm = () => {
 
 
     return (
-        <div className="flex items-center justify-center px-5 py-3 rounded-md bg-neutral-600 w-full md:w-[70%] shadow-2xl">
+        <div className="flex items-center justify-center px-5 py-3 rounded-md bg-[#222] w-full md:w-[70%] shadow-2xl">
             <form 
             className="w-full flex flex-col gap-5 items-center justify-center"
             onSubmit={(e) => onSubmit(e)}>

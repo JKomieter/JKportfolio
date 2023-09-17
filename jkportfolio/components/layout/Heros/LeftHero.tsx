@@ -11,10 +11,10 @@ const LeftHero = () => {
       <div className="w-full flex flex-col gap-4">
         <div className={`${bebasNeue.className}`}>
           <div>
-            <span className="text-orange-700 lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-semibold">
+            <span className="text-orange-700 lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-semibold">
               Akwaaba!{" "}
             </span>
-            <span className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-semibold text-neutral-100">
+            <span className="lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-semibold text-neutral-100">
               I'm Joel
             </span>
           </div>
@@ -36,7 +36,7 @@ const LeftHero = () => {
             />
           </div>
         </div>
-        <div className="md:text-md text-sm font-semibold text-green-200">
+        <div className="md:text-md text-sm font-semibold text-orange-200">
           Designing and Coding Simply Beautiful Creations, Driven by Passion.
         </div>
       </div>
