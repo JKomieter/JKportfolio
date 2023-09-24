@@ -19,6 +19,30 @@ export const projectdata = {
             "Docker",
             "Jest"
         ],
-        challenge: "One of the key challenges I encountered during the development of Campus Commune was deciding how to handle the storage of various types of media files, including images, PDFs, audios, and videos. I needed a solution that would allow efficient storage and retrieval of these files while ensuring scalability and performance.Initially, I had to make a critical decision between using Firebase Storage and Firebase Firestore for managing these files.Firebase Firestore provided an elegant way to reference files with its document- based structure, making it easy to associate files with specific database entries. However, it had limitations when it came to handling large files effectively. On the other hand, Firebase Storage excelled in storing large media files efficiently, which was crucial for our application's functionality. However, referencing and associating files in Firebase Storage was not as straightforward as it was in Firestore. To overcome this challenge, I had to architect the system very wisely.I devised a strategy to segment and organize the files in Firebase Storage so that they could be easily retrieved and referenced within the application.This segmentation allowed us to maintain a logical structure, ensuring that each file could be associated with the relevant user, group, or content item in Campus Commune. This experience was a valuable lesson in system architecture and database design.It required careful consideration of both the storage needs of our application and the ease of reference for these files.In the end, I successfully architected the system to achieve our goal of efficiently managing and retrieving various media files while maintaining the performance and scalability required for a platform like Campus Commune."
-        },
+        challenge: "One of the key challenges I encountered during the development of Campus Commune was deciding how to handle the storage of various types of media files, including images, PDFs, audios, and videos. I needed a solution that would allow efficient storage and retrieval of these files while ensuring scalability and performance.Initially, I had to make a critical decision between using Firebase Storage and Firebase Firestore for managing these files.Firebase Firestore provided an elegant way to reference files with its document- based structure, making it easy to associate files with specific database entries. However, it had limitations when it came to handling large files effectively. On the other hand, Firebase Storage excelled in storing large media files efficiently, which was crucial for our application's functionality. However, referencing and associating files in Firebase Storage was not as straightforward as it was in Firestore. To overcome this challenge, I had to architect the system very wisely.I devised a strategy to segment and organize the files in Firebase Storage so that they could be easily retrieved and referenced within the application.This segmentation allowed us to maintain a logical structure, ensuring that each file could be associated with the relevant user, group, or content item in Campus Commune. This experience was a valuable lesson in system architecture and database design.It required careful consideration of both the storage needs of our application and the ease of reference for these files.In the end, I successfully architected the system to achieve our goal of efficiently managing and retrieving various media files while maintaining the performance and scalability required for a platform like Campus Commune.",
+        features: [
+            {
+                name: "Discussion Forums",
+                description: "One of the core features of Campus Commune is its discussion forums. Students can create discussion groups dedicated to specific topics or courses, facilitating focused conversations."
+            },
+            {
+                name: "Online Groups (CamSpaces)",
+                description: "Campus Commune allows students to create online groups called CamSpaces. These groups can be used for a variety of purposes, including clubs, organizations, and study groups."
+            },
+            {
+                name: "Post, Comment, and Like",
+                description: "Users can post questions related to specific topics, comment on existing posts, and express their appreciation by liking posts. This interactive feature promotes engagement and knowledge sharing."
+            },
+            {
+                name: "Course Discussions",
+                description: "Campus Commune provides the option to join course-specific discussion groups. These groups become hubs for sharing notes, discussing course materials, and gaining insights from peers."
+            },
+            {
+                name: "Notes and Resources",
+                description: "Students can upload and share notes and resources with their peers. This feature allows students to collaborate and learn from each other."
+            }
+        ],
+        githubLink: "https://github.com/JKomieter/CampusCommune",
+        liveLink: "https://campus-commune.vercel.app/",
+    },
 }

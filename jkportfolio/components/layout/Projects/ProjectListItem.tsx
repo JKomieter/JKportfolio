@@ -30,10 +30,16 @@ const ProjectListItem: FC<ProjectListItemProps> = ({
     image,
     link,
 }) => {
+    console.log(image)
 
     const { ref: imageRef, inView: imageRefIsVisible } = useInView()
     const { ref: textRef, inView: textRefIsVisible } = useInView()
     const router = useRouter();
+
+    // Check if the file type is an image
+    const isImage = (fileType: string) => {
+        return fileType.startsWith("image/");
+    };
     
     return (
         <div
