@@ -24,8 +24,8 @@ const ProjectMedia = ({ project }: {project: Record<string, any>}) => {
                     className="rounded-lg w-full h-full"
                     controls={false}
                     loop
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={400}
                     autoPlay
                 />
                 <span className="px-5 py-3 bg-orange-700 text-neutral-100 rounded-md text-center font-semibold">

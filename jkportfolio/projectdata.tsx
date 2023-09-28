@@ -1,10 +1,36 @@
+import { AI, CampusCommune } from "./components/svg";
+
 export const projectdata = {
     "emoticare": {
         title: "Emoticare AI",
         short_description: "Our goal is to use AI to provide empathetic support, empowering users on their emotional journeys",
         video: "",
         image: "/images/Emoticare.png",
-        overview: "Emoticare AI is a mental health chatbot that uses AI to provide empathetic support, empowering users on their emotional journeys. Our goal is to use AI to provide empathetic support, empowering users on their emotional journeys. We are a team of passionate students from the University of California, Berkeley, who are dedicated to improving mental health care. We believe that everyone deserves access to quality mental health care, and we are committed to making this a reality. We are a team of passionate students from the University of California, Berkeley, who are dedicated to improving mental health care. We believe that everyone deserves access to quality mental health care, and we are committed to making this a reality. We are a team of passionate students from the University of California, Berkeley, who are dedicated to improving mental health care. We believe that everyone deserves access to quality mental health care, and we are committed to making this a reality."
+        overview: "Emoticare AI is a mental health chatbot that uses AI to provide empathetic support, empowering users on their emotional journeys. Our goal is to use AI to provide empathetic support, empowering users on their emotional journeys. We are a team of passionate students from the University of California, Berkeley, who are dedicated to improving mental health care. We believe that everyone deserves access to quality mental health care, and we are committed to making this a reality. We are a team of passionate students from the University of California, Berkeley, who are dedicated to improving mental health care. We believe that everyone deserves access to quality mental health care, and we are committed to making this a reality. We are a team of passionate students from the University of California, Berkeley, who are dedicated to improving mental health care. We believe that everyone deserves access to quality mental health care, and we are committed to making this a reality.",
+        tools: [
+            "React",
+            "Tailwind CSS",
+            "PostgreSQL",
+            "Docker",
+            "Jest",
+            "NLP",
+            "Machine Learning",
+        ],
+        challenge: "One of the initial challenges we encountered was a port conflict between our TypeScript server and Flask server, both essential components of the EmoticareAI app. This issue prevented them from communicating effectively through API endpoints. After careful investigation, we identified the conflict and successfully resolved it. This allowed seamless communication between the frontend and the backend, ensuring that the app functioned as intended. Achieving high accuracy in the AI model's responses to user inputs was a critical challenge. Emotional well-being applications rely heavily on the model's ability to provide appropriate and empathetic responses. Initially, our model's accuracy needed improvement. Through rigorous training, fine-tuning, and the incorporation of advanced Natural Language Processing (NLP) techniques, we were able to significantly enhance the model's accuracy, achieving an impressive 80% accuracy rate. This improvement was pivotal in creating a more effective and user-friendly EmoticareAI experience",
+        features: [
+            {
+                name: "Journaling Feature",
+                description: "EmoticareAI offers users a unique journaling feature that enables them to record their emotions and thoughts throughout the day or in the moment. Users can freely express their feelings, thoughts, and experiences within the app. What sets EmoticareAI apart is its AI-powered response system. Upon journaling, the app provides personalized responses that mimic the empathy and support of a trusted friend. Users receive words of encouragement, advice, or simply a friendly response tailored to their emotional state."
+            },
+            {
+                name: "Emotion Detection and Response",
+                description: "The EmoticareAI app incorporates advanced facial recognition technology. Using the device's camera, the app detects the user's facial expressions and analyzes their emotional state. Based on this analysis, the app responds with appropriate emotional support. Whether a user is feeling happy, sad, anxious, or any other emotion, EmoticareAI provides empathetic responses to help users navigate their emotions. This feature creates a unique and interactive emotional support system, akin to having a caring friend by your side."
+            }
+        ],
+        githubLink: "https://github.com/rishikeshydv/emoticareai",
+        liveLink: "https://emoticareai.com/",
+        state: "We are in the process of Dockerizing the app, which will improve its deployment efficiency and scalability, ensuring a seamless experience for users. We are dedicated to enhancing the accuracy and responsiveness of the AI chatbot. This involves fine-tuning the underlying natural language processing (NLP) models for better understanding and more empathetic responses. We're giving the app a facelift with improved user interface (UI) and user experience (UX) designs. This will make the app more visually appealing and intuitive for users.",
+        HeroIcon: <AI className="w-72 h-72 text-neutral-100" />
     },
     "campus-commune": {
         title: "Campus Commune",
@@ -44,5 +70,7 @@ export const projectdata = {
         ],
         githubLink: "https://github.com/JKomieter/CampusCommune",
         liveLink: "https://campus-commune.vercel.app/",
+        state: "I'm currently working on making the app more personal by provinding a personalized feed for each user. I'm also working on adding a feature to allow users to create and join events, find roomates and also find their lost items.",
+        HeroIcon: <CampusCommune className="w-72 h-72 text-neutral-100" />
     },
 }

@@ -1,4 +1,5 @@
 export { default as HeroSvg } from "./HeroSvg.svg";
+export { default as SvgBg } from "./SvgBg.svg";
 export { default as HardCoding } from "./HardCoding.svg";
 export { default as JavaScript } from "./JavaScript.svg";
 export { default as HTML } from "./HTML.svg";
@@ -14,3 +15,4 @@ export { default as Rust } from "./Rust.svg";
 export { default as Docker } from "./Docker.svg";
 export { default as Hero2 } from "./Hero2.svg";
 export { default as CampusCommune } from "./CampusCommune.svg";
+export { default as AI } from "./AI.svg";

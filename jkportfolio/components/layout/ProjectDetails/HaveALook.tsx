@@ -25,8 +25,7 @@ const HaveALook = ({ project }: { project: Record<string, any> }) => {
                 <a
                     href={githubLink}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center justify-center px-5 py-3 rounded-2xl text-white cursor-pointer font-semibold bg-orange-700 ${montserrat.className}}`}
+                    className={`flex items-center justify-center px-5 py-3 rounded-3xl text-white cursor-pointer font-semibold bg-orange-700 ${montserrat.className}}`}
                 >
                     <FaGithub className="mr-2" />
                     View on GitHub
@@ -34,8 +33,7 @@ const HaveALook = ({ project }: { project: Record<string, any> }) => {
                 <a
                     href={liveLink}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center justify-center px-5 py-3 rounded-2xl text-white cursor-pointer font-semibold bg-orange-700 ${montserrat.className}}`}
+                    className={`flex items-center justify-center px-5 py-3 rounded-3xl text-white cursor-pointer font-semibold bg-orange-700 ${montserrat.className}}`}
                 >
                     <FiExternalLink className="mr-2" />
                     View Live
