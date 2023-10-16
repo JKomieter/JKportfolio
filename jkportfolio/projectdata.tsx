@@ -1,4 +1,4 @@
-import { AI, CampusCommune } from "./components/svg";
+import { AI, CampusCommune } from "./svg";
 
 export const projectdata = {
     "emoticare": {
@@ -30,7 +30,7 @@ export const projectdata = {
         githubLink: "https://github.com/rishikeshydv/emoticareai",
         liveLink: "https://emoticareai.com/",
         state: "We are in the process of Dockerizing the app, which will improve its deployment efficiency and scalability, ensuring a seamless experience for users. We are dedicated to enhancing the accuracy and responsiveness of the AI chatbot. This involves fine-tuning the underlying natural language processing (NLP) models for better understanding and more empathetic responses. We're giving the app a facelift with improved user interface (UI) and user experience (UX) designs. This will make the app more visually appealing and intuitive for users.",
-        HeroIcon: <AI className="w-72 h-72 text-neutral-100" />
+        HeroIcon: AI
     },
     "campus-commune": {
         title: "Campus Commune",
@@ -71,6 +71,9 @@ export const projectdata = {
         githubLink: "https://github.com/JKomieter/CampusCommune",
         liveLink: "https://campus-commune.vercel.app/",
         state: "I'm currently working on making the app more personal by provinding a personalized feed for each user. I'm also working on adding a feature to allow users to create and join events, find roomates and also find their lost items.",
-        HeroIcon: <CampusCommune className="w-72 h-72 text-neutral-100" />
+        HeroIcon: CampusCommune
     },
+    "SocialBuzz": {
+        
+    }
 }

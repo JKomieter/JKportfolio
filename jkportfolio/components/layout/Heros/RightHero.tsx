@@ -1,5 +1,5 @@
-import { HeroSvg } from "@/components/svg";
-import { Hero2 } from "@/components/svg";
+import { HeroSvg } from "@/svg";
+import { Hero2 } from "@/svg";
 
 const RightHero = () => {
   return (

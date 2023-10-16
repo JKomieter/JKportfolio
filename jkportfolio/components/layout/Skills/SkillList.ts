@@ -1,4 +1,4 @@
-import { Firebase, GitHub, HTML, JavaScript, MongoDB, NodeJs, ReactJs, CSS, Rust, Docker, Python } from "../../svg";
+import { Firebase, GitHub, HTML, JavaScript, MongoDB, NodeJs, ReactJs, CSS, Rust, Docker, Python } from "../../../svg";
 
 export type Skill = {
     name: string;

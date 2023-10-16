@@ -1,6 +1,6 @@
 import { Bebas_Neue } from 'next/font/google'
 import ContactForm from './ContactForm'
-import { SvgBg } from '@/components/svg'
+import { SvgBg } from '@/svg'
 
 const bebasNeue = Bebas_Neue({
     subsets: ['latin'],
@@ -10,7 +10,7 @@ const bebasNeue = Bebas_Neue({
 const Contact = () => {
     return (
         <div
-            className='w-full lg:px-32 md:px-16 sm:px-8 px-4 flex 
+            className='w-full lg:px-32 md:px-16 sm:px-8 px-4 flex bg-slate-500
             flex-col gap-3 items-center h-screen overflow-y-hidden relative'
         >
             <div className='w-full flex flex-col gap-5 items-center justify-center py-10'>
@@ -27,7 +27,7 @@ const Contact = () => {
                 </p>
             </div>
             <ContactForm />
-            <SvgBg className='w-full h-full -z-50 absolute' />
+            {/* <SvgBg className='w-full h-full -z-50 absolute' /> */}
         </div>
     )
 }

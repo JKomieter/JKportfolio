@@ -1,4 +1,4 @@
-import { CampusCommune, SvgBg } from "@/components/svg";
+import { CampusCommune, SvgBg } from "@/svg";
 import { Raleway } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import { BsArrowBarDown } from "react-icons/bs";
@@ -26,7 +26,7 @@ const ProjectHero = ({project}: {project: Record<string, any>}) => {
             <p className={`lg:text-xl md:text-lg text-base text-neutral-100 text-center ${montserrat.className}`}>
                 {project.short_description}
             </p>
-            {project.HeroIcon}
+            <project.HeroIcon className="text-[200px]" />
         </div>
     )
 }
